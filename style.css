@@ -1,0 +1,90 @@
+.top {
+    width: 500px;
+    height: 300px;
+    background-color: antiquewhite;
+    padding: 0 200px
+}
+
+span {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    margin: 5px;
+}
+
+.fa-brands {
+    color: blue;
+    font-size: 30px;
+}
+
+
+table {
+    margin: 0 400px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+thead {
+    font-weight: 900;
+}
+
+td {
+    border: 1px solid rgb(90, 56, 6);
+    padding: 2px 10px;
+}
+
+
+@keyframes sliding {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: green;
+        top: 225px;
+        transform: scale(0.5);
+    }
+
+    50% {
+        top: 0;
+        background-color: red;
+        transform: scale(1);
+    }
+
+    75% {
+        background-color: green;
+        top: 225px;
+        transform: scale(0.5);
+
+    }
+
+    100% {
+        background-color: red;
+        top: 0;
+        left: 650px;
+        transform: scale(1);
+    }
+}
+
+.stage {
+    width: 750px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    animation: sliding 2s ease-in-out 0.25s 5 alternate;
+}
